@@ -15,9 +15,9 @@ const birthdayCron = () => {
             if (dob.getMonth === month & dob.getDate() === day ) {
                 await sendEmail (
                     user.email, 
-                    "Happy Birthday",
+                    "Birthday Message from Devor",
                    `<h2> Happy Birthday ${user.name} </h2>
-                   <p>Wishing you, joy succes and good health</p>`
+                   <p>Devor be Wishing you, joy succes and good health, You deserve the best ya know</p>`
                 )
             }
         }
