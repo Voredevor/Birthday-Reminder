@@ -26,15 +26,15 @@ const BirthdayForm = () => {
 
             setPopup({
                 type: "success",
-                text: "🎉 Birthday saved successfully! 🎊"
+                text: "🎉 IBE JOR - LFG! 🎊"
             })
 
             setFormData({ name: "", email: "", dateOfBirth: "" })
         } catch (error) {
             setPopup({
                 type: "error",
-                text: 
-                error.response?.data?.message || "Omo E no work o"
+                text: "Omo E no work o"
+                // text: error.response?.data?.message || "Omo E no work o"
             });
         }; 
         setTimeout(() => setPopup(null), 5000)
